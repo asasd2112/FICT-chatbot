@@ -1,0 +1,52 @@
+.question {
+    background-color: #ffffff;
+    padding: 0px;
+    padding-left: 33px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+  }
+  
+  .answer {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite, grow 1s ease-in-out infinite;
+    filter: drop-shadow(0 0 5px rgba(246, 244, 244, 0.5));
+  }
+  
+  .noSpinner {
+    animation: none;
+  }
+  
+  .suggestions-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .suggestion-card {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .suggestion-card:hover {
+    background-color: #e6ebef;
+  }
